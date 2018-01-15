@@ -7,148 +7,199 @@
     <meta name="description" content="A Static Web Site Template For A Car Shop Or Onlinve Archive">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/styles.css">
+
     <title>Car Sales Lot</title>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="flx-container navbar-secondary">
             <ul>
-                <li>f</li>
-                <li>t</li>
-                <li>g+</li>
-                <li>p</li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-google-plus-g" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-pinterest" aria-hidden="true"></i>
+                    </a>
+                </li>
             </ul>
             <ul>
                 <li>Give Us A Call: +123456</li>
             </ul>
             <ul>
-                <li>Login | Register</li>
+                <li>
+                    <a href="#">Login</a> |
+                    <a href="#">Register</a>
+                </li>
             </ul>
         </nav>
-        <nav>
+        <nav class="flx-container navbar-primary">
             <ul>
-                <li>Logo</li>
+                <li>
+                    <a href="#">
+                        <img src="assets/images/car-logo.jpg" alt="garage logo">
+                    </a>
+                </li>
             </ul>
-            <ul>
-                <li>HOME</li>
-                <li>CATEGORIES</li>
-                <li>DEALERS</li>
-                <li>CONTACT</li>
-                <li>POST NEW CAR</li>
+            <ul class="flx-container primary-links">
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="#">CATEGORIES</a>
+                </li>
+                <li>
+                    <a href="#">DEALERS</a>
+                </li>
+                <li>
+                    <a href="#">CONTACT</a>
+                </li>
+                <li>
+                    <a href="#">POST NEW CAR</a>
+                </li>
             </ul>
         </nav>
-        <div>
-            <img src="" alt="">
-            <h1>Your Dream Car</h1>
+        <div class="banner">
+            <img src="assets/images/banner-ferrari.jpeg" alt="red ferrari" width="100%">
+            <div class="banner-txt">
+                <h3>Your Dream Car</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur, sed do eiusmod tempor incididunt ut labore</p>
+            </div>
         </div>
-        <form action="">
-            <h1>Search Text</h1>
-            <input type="text" name="" id="">
-            <select name="" id="">
-                <option value="">EPIC</option>
-                <option value="">OLD</option>
-                <option value="">NEW</option>
-            </select>
-            <select name="" id="">
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-            </select>
-            <select name="" id="">
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-            </select>
-            <input type="range" name="" id="">
-            <button>Search</button>
-        </form>
+            <form action="" class="search-form">
+                <h4>Search Text</h4>
+                <input placeholder="Enter Keyword" type="text" name="" id="">
+                <div class="selectdiv">
+                <select name="" id="">
+                    <option selected="selected" class="dropdown">Category</option>
+                    <option value="epic">EPIC</option>
+                    <option value="old">OLD</option>
+                    <option value="new">NEW</option>
+                </select>
+                </div>
+                <div class="selectdiv">
+                <select name="" id="">
+                    <option selected="selected" class="dropdown">Min Year</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                </div>
+                <div class="selectdiv">
+                <select name="" id="">
+                        <option selected="selected" class="dropdown">Max Year</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                </div>
+                <input type="range" name="" id="">
+                <button>Search</button>
+            </form>
     </header>
     <main>
         <section>
-    <h1>FEATURES CARS</h1>
-<div>
-    <div>
+            <h1>FEATURES CARS</h1>
+            <div>
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <div>
+                        <h1></h1>
+                        <p></p>
+                        <h2></h2>
+                        <a href=""></a>
+                    </div>
+                </div>
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <div>
+                        <h1></h1>
+                        <p></p>
+                        <h2></h2>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h1>LATEST CARS</h1>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h1></h1>
+                <p></p>
+            </div>
+            <form action="">
+                <input type="email" name="" id="">
+                <button>SUBSCRIBE</button>
+            </form>
+        </section>
+
+    </main>
+    <footer>
         <img src="" alt="">
-    </div>
-    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p></p>
+        <hr>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
         <div>
-            <h1></h1>
             <p></p>
-            <h2></h2>
-            <a href=""></a>
-        </div>
-    </div>
-    <div>
-        <img src="" alt="">
-    </div>
-    <div>
-        <div>
-            <h1></h1>
             <p></p>
-            <h2></h2>
-            <a href=""></a>
         </div>
-    </div>
-</div>
-</section>
-
-<section>
-    <h1>LATEST CARS</h1>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-    <div>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-    </div>
-</section>
-
-<section>
-    <div>
-        <h1></h1>
-        <p></p>
-    </div>
-    <form action=""><input type="email" name="" id="">
-    <button>SUBSCRIBE</button>
-</form>
-</section>
-
-</main>
-<footer>
-    <img src="" alt="">
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-    <p></p>
-    <hr>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-    <div>
-        <p></p>
-        <p></p>
-    </div>
-</footer>
+    </footer>
 </body>
 
 
