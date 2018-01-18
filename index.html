@@ -84,36 +84,44 @@
                 <p>Lorem ipsum dolor sit amet, consectetur, sed do eiusmod tempor incididunt ut labore</p>
             </div>
         </div>
-            <form action="" class="search-form">
-                <h4>Search Text</h4>
-                <input placeholder="Enter Keyword" type="text" name="" id="">
-                <div class="selectdiv">
+        <form action="" class="search-form">
+            <h4>Search Text</h4>
+            <input placeholder="Enter Keyword" type="text" name="" id="">
+            <div class="selectdiv">
                 <select name="" id="">
                     <option selected="selected" class="dropdown">Category</option>
                     <option value="epic">EPIC</option>
                     <option value="old">OLD</option>
                     <option value="new">NEW</option>
                 </select>
-                </div>
-                <div class="selectdiv">
+            </div>
+            <div class="selectdiv">
                 <select name="" id="">
                     <option selected="selected" class="dropdown">Min Year</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                 </select>
-                </div>
-                <div class="selectdiv">
+            </div>
+            <div class="selectdiv">
                 <select name="" id="">
-                        <option selected="selected" class="dropdown">Max Year</option>
+                    <option selected="selected" class="dropdown">Max Year</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                 </select>
-                </div>
-                <input type="range" name="" id="">
-                <button>Search</button>
-            </form>
+            </div>
+            <fieldset>
+                    <label for="rangeVal">Price $<span id="rangeValLabel"></span> - 1000000</label>
+                    
+
+                    <input class="noborder" type ="range" max="1000000" min="0"
+                        oninput="document.getElementById('rangeValLabel').innerHTML = this.value;"
+                        step="1" name="rangeVal" id="rangeVal" value="500000">
+                    </input>
+                </fieldset>
+            <button>Search</button>
+        </form>
     </header>
     <main>
         <section>
@@ -200,6 +208,7 @@
             <p></p>
         </div>
     </footer>
+    <script>document.getElementById("rangeValLabel").innerHTML = "500000";</script>
 </body>
 
 
