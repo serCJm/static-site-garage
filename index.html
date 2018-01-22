@@ -112,55 +112,65 @@
                 </select>
             </div>
             <fieldset>
-                    <label for="rangeVal">Price $<span id="rangeValLabel"></span> - 1000000</label>
-                    
+                <label for="rangeVal">Price $
+                    <span id="rangeValLabel"></span> - 1000000</label>
 
-                    <input class="noborder" type ="range" max="1000000" min="0"
-                        oninput="document.getElementById('rangeValLabel').innerHTML = this.value;"
-                        step="1" name="rangeVal" id="rangeVal" value="500000">
-                    </input>
-                </fieldset>
-            <button>Search</button>
+
+                <input class="noborder" type="range" max="1000000" min="0" oninput="document.getElementById('rangeValLabel').innerHTML = this.value;"
+                    step="1" name="rangeVal" id="rangeVal" value="500000">
+                </input>
+            </fieldset>
+            <button class="search-btn">
+                <i class="fas fa-search"></i>
+            </button>
         </form>
     </header>
     <main>
-        <section>
-            <h1>FEATURES CARS</h1>
-            <div>
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <div>
-                        <h1></h1>
-                        <p></p>
-                        <h2></h2>
-                        <a href=""></a>
+        <section class="features-cars">
+            <h2>
+                <span>•</span>FEATURES CARS
+                <span>•</span>
+            </h2>
+            <div class="flx-container">
+                <div class="flx-container features-row">
+                    <img class="features-item" src="assets/images/car-mercedes.jpg" alt="yellow mercedes">
+
+                    <div class="features-item">
+                    <div class="features-textbox">
+                        <h4>LOREM IPSUM</h4>
+                        <p>"Lorem ipsum dolor sit amet, consectetur, sed do eiusmod tempor incididunt</p>
+                        <h4>Price €</h4>
+                        <a href="">READ MORE</a>
+                    </div>
                     </div>
                 </div>
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <div>
-                        <h1></h1>
-                        <p></p>
-                        <h2></h2>
-                        <a href=""></a>
+                <div class="flx-container features-row">
+                    <img class="features-item" src="assets/images/car-mustang.jpg" alt="white mustang">
+
+                    <div class="features-item">
+                        <div class="features-textbox">
+                            <h4>LOREM IPSUM</h4>
+                            <p>"Lorem ipsum dolor sit amet, consectetur, sed do eiusmod tempor incididunt</p>
+                            <h4>Price €</h4>
+                            <a href="">READ MORE</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h1>LATEST CARS</h1>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+        <section class="latest-cars">
+                <h2>
+                        <span>•</span>LATEST CARS
+                        <span>•</span>
+                    </h2>
+            <ul class="flx-container">
+                <li>SORT BY:</li>
+                <li><a href="#">MOST RECENT</a></li>
+                <li><a href="#">MOST POPULAR</a></li>
+                <li><a href="#">ALPHABETICAL</a></li>
+                <li><a href="#">HIGHEST PRICE</a></li>
+                <li><a href="#">LOWEST PRICE</a></li>
             </ul>
             <div>
                 <img src="" alt="">
@@ -208,7 +218,9 @@
             <p></p>
         </div>
     </footer>
-    <script>document.getElementById("rangeValLabel").innerHTML = "500000";</script>
+    <script>
+        document.getElementById("rangeValLabel").innerHTML = "500000";
+    </script>
 </body>
 
 
