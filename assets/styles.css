@@ -479,3 +479,194 @@ div.features-item {
         padding: .3rem 0;
     }
 }
+
+.latest-cars-container {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.latest-cars-container .latest-cars-item {
+    min-width: 300px;
+    flex: 0 0 25%;
+    position: relative;
+}
+
+.latest-cars-item img {
+    width: 100%;
+    display: block;
+}
+
+.latest-cars-textbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    display: block;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+    transition: opacity 500ms linear;
+}
+
+.latest-cars-textbox .star {
+    font-size: .4rem;
+    height: 1rem;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.latest-cars-textbox i {
+    vertical-align: middle;
+}
+.latest-cars-textbox .star:first-child {
+    border-bottom: 2px solid #F6F6FB;
+    margin-top: 8%;
+}
+
+.latest-cars-textbox .car-descript {
+    border-top: 1px solid #F6F6FB;
+    border-bottom: 1px solid #F6F6FB;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.latest-cars-textbox .car-descript h3 {
+    font-size: 1rem;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+.latest-cars-textbox .car-descript p {
+    font-size: .7rem;
+    margin-top: 2%;
+    margin-bottom: 0;
+}
+
+.latest-cars-textbox .car-descript h4 {
+    font-size: .8rem;
+    margin-top: 5%;
+}
+
+.latest-cars-textbox .car-descript a {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: .8rem;
+}
+
+.latest-cars-textbox .car-descript div {
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.latest-cars-textbox .star:last-child {
+    border-top: 2px solid #F6F6FB;
+    margin-top: 2%;
+    padding-top: 2%;
+}
+
+.latest-cars-item:hover .latest-cars-textbox {
+    display: block;
+    background-color: rgba(0, 0, 0, .6);
+    opacity: 1;
+    transition: opacity 500ms linear;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 2%;
+}
+
+.newsletter img {
+    display: block;
+    width: 100%;
+}
+
+.newsletter .news-border {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.newsletter > div:first-child {
+    width: 100%;
+    min-width: 300px;
+    flex: 0 0 55%;
+    z-index: 3;
+    position: relative;
+}
+
+.newsletter .news-text {
+    position: absolute;
+    left: 20%;
+    top: 35%;
+    width: 70%;
+}
+
+.news-text h1 {
+    font-size: 1.2rem;
+}
+
+.news-text p {
+    font-size: 1rem;
+}
+
+.newsletter form {
+    min-width: 300px;
+    flex: 0 0 45%;
+    display: block;
+    position: relative;
+}
+
+.newsletter .news-form {
+    display: block;
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    top: 40%;
+    color: #fff;
+}
+
+.news-form input {
+    display: block;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+}
+
+.news-form input::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.news-form input:focus {
+    color: #fff;
+    border-bottom: 1px solid #66afe9;
+}
+
+.news-form button {
+    display: block;
+    background: none;
+    width: 100%;
+    height: 3rem;
+    margin-top: 5%;
+    color: #fff;
+    font-size: 1.6rem;
+    outline: none;
+    border: 1px solid #fff;
+}
+
+.news-form button:hover {
+    background: #fff;
+    color: #000;
+}
