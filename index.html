@@ -59,6 +59,7 @@
                     </a>
                 </li>
             </ul>
+            <a href="#" class="mobile-nav"><i class="fas fa-bars"></i></a>
             <ul class="flx-container primary-links">
                 <li>
                     <a href="#">HOME</a>
@@ -418,29 +419,60 @@
 
     </main>
     <footer>
-        <img src="" alt="">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <img src="assets/images/car-logo.png" alt="garage logo" width="150px"
+        heigh="150px">
+        <ul class="flx-container footer-nav">
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CATEGORIES</a></li>
+            <li><a href="#">PREORDERS</a></li>
+            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#">RECEIVE OUT NEWSLETTER</a></li>
         </ul>
-        <p></p>
+        <p>"Lorem ipsum dolor sit amet, consectetur, sed do eiusmod tempor incididunt
+            eiusmod tempor incididunt</p>
         <hr>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <ul class="flx-container footer-social">
+            <li>
+                <a href="#">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-google-plus-g" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-pinterest" aria-hidden="true"></i>
+                </a>
+            </li>
         </ul>
-        <div>
-            <p></p>
-            <p></p>
+        <div class="flx-container credits">
+            <p>&#169; Copyright | <a href="#">Privacy</a> | <a href="#">Policy</a></p>
+            <p>Designed by <span>CJ</span></p>
         </div>
     </footer>
     <script>
         document.getElementById("rangeValLabel").innerHTML = "500000";
+        var menuBtn = document.getElementsByClassName("mobile-nav")[0];
+        console.log(menuBtn);
+        var primaryLinks = document.getElementsByClassName("primary-links")[0];
+        var menu = document.getElementsByClassName("navbar-primary")[0];
+        menuBtn.onclick = function() {
+            if (primaryLinks.style.display !== "block") {
+                primaryLinks.style.display = "block";
+                menu.style.height = "auto";
+            } else {
+                primaryLinks.style.display = "none";
+            menu.style.height = "2rem";
+            }
+        }
     </script>
 </body>
 
