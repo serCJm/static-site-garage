@@ -461,17 +461,11 @@
     <script>
         document.getElementById("rangeValLabel").innerHTML = "500000";
         var menuBtn = document.getElementsByClassName("mobile-nav")[0];
-        console.log(menuBtn);
         var primaryLinks = document.getElementsByClassName("primary-links")[0];
         var menu = document.getElementsByClassName("navbar-primary")[0];
         menuBtn.onclick = function() {
-            if (primaryLinks.style.display !== "block") {
-                primaryLinks.style.display = "block";
-                menu.style.height = "auto";
-            } else {
-                primaryLinks.style.display = "none";
-            menu.style.height = "2rem";
-            }
+            primaryLinks.classList.toggle("open");
+            menu.classList.toggle("open-height");
         }
     </script>
 </body>

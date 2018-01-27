@@ -191,6 +191,15 @@ nav li {
         margin: 0;
     }
 
+    .navbar-primary .primary-links.open {
+        display: block;
+    }
+
+    .navbar-primary.open-height {
+        height: auto;
+    }
+
+
 }
 
 
