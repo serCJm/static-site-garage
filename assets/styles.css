@@ -655,7 +655,7 @@ div.features-item {
 }
 .latest-cars-textbox .star:first-child {
     border-bottom: 2px solid #F6F6FB;
-    margin-top: 8%;
+    margin-top: 4%;
 }
 
 .latest-cars-textbox .car-descript {
@@ -680,6 +680,7 @@ div.features-item {
 .latest-cars-textbox .car-descript h4 {
     font-size: .8rem;
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .latest-cars-textbox .car-descript a {
@@ -829,6 +830,11 @@ div.features-item {
 @media screen and (max-width: 1350px) {
     .news-form button {
         letter-spacing: 0;
+        font-size: 1rem;
+    }
+
+    .news-text p {
+        font-size: .8rem;
     }
 }
 
